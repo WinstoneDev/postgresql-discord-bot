@@ -25,10 +25,10 @@ module.exports = class {
 
             LEADERBOARD_NOT_SPECIFIED: "Merci de choisir entre **reputation** et **money**.",
 
-            DAILY_COOLDOWN: (user) => `Vous avez déjà pris votre salaire récemment. Vous pourrez reprendre votre salaire dans **${this.convertMs(user.cooldowns.daily-Date.now())}**`,
+            DAILY_COOLDOWN: (user) => `Vous avez déjà pris votre salaire récemment. Vous pourrez reprendre votre salaire dans **${this.convertMs(user.cooldowns.daily - Date.now())}**`,
             DAILY_SUCCESS: "**100** credits ont été ajouté dans votre porte-feuille.",
 
-            REPUTATION_COOLDOWN: (user) => `Vous avez déjà donner un point de réputation récemment. Vous pourrez donner un point de réputation dans **${this.convertMs(user.cooldowns.daily-Date.now())}**`,
+            REPUTATION_COOLDOWN: (user) => `Vous avez déjà donner un point de réputation récemment. Vous pourrez donner un point de réputation dans **${this.convertMs(user.cooldowns.daily - Date.now())}**`,
             REPUTATION_SUCCESS: (target) => `Vous avez donné un point de réputation à <@${target.id}>.`,
             REPUTATION_NICE_TRY: "Vous ne pouvez pas donner un point de réputation à vous-même."
         }
