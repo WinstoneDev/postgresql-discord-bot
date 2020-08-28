@@ -26,3 +26,5 @@ Language Structure: https://github.com/Androz2091/AtlantaBot
 # License
 
 This project is licensed under the GPL 3.0 License. If you plan to use any part of this source code in your own bot, please give some form of credit somewhere.
+
+Need help? Contact me on Discord `Mizuki#2477` or join this server https://discord.gg/Dj4WY4s
