@@ -3,7 +3,7 @@ async function getGuild(guild) {
     let doc = await client.db.pool.query("SELECT * FROM guilds WHERE id=$1", [guild.id]);
 
     if (doc.rows.length === 0) {
-        await client.db.pool.query("INSERT INTO guilds (id, language, prefix) values ($1,$2,$3)", [guild.id, "english", client.config.prefix]);
+        await client.db.pool.query("INSERT INTO guilds (id, language, prefix, blacklisted) values ($1,$2,$3,$4)", [guild.id, "english", client.config.prefix, false]);
         doc = await client.db.pool.query("SELECT * FROM guilds WHERE id=$1", [guild.id]);
     }
 
