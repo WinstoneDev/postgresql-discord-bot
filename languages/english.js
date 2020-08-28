@@ -6,7 +6,7 @@ module.exports = class {
             yes: "yes",
 
             NO_ENOUGH_PERMS: "You don't have enough permissions.",
-            PLEASE_MENTION_USER: "Merci de mentionnner un utilisateur.",
+            PLEASE_MENTION_USER: "Please mention a user.",
             TARGET_BOT: "This user is a bot.",
 
             RELOAD_SUCCESS_COMMAND: (cmd) => `Command **${cmd}** has been successfully reloaded.`,
@@ -26,7 +26,7 @@ module.exports = class {
             LEADERBOARD_NOT_SPECIFIED: "Please choose between **reputation** and **money**.",
 
             DAILY_COOLDOWN: (user) => `You already took your salary recently. Come back in **${this.convertMs(user.cooldowns.daily - Date.now())}**`,
-            DAILY_SUCCESS: "**100** credits ont été ajouté dans votre porte-feuille.",
+            DAILY_SUCCESS: "**100** credits has been added to your account.",
 
             REPUTATION_COOLDOWN: (user) => `You already gived a reputation recently. Try again in **${this.convertMs(user.cooldowns.daily - Date.now())}**`,
             REPUTATION_SUCCESS: (target) => `You gave <@${target.id}> 1 reputation.`,
