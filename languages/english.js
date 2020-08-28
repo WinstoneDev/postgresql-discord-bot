@@ -25,10 +25,10 @@ module.exports = class {
 
             LEADERBOARD_NOT_SPECIFIED: "Please choose between **reputation** and **money**.",
 
-            DAILY_COOLDOWN: (user) => `You already took your salary recently. Come back in **${this.convertMs(user.cooldowns.daily-Date.now())}**`,
+            DAILY_COOLDOWN: (user) => `You already took your salary recently. Come back in **${this.convertMs(user.cooldowns.daily - Date.now())}**`,
             DAILY_SUCCESS: "**100** credits ont été ajouté dans votre porte-feuille.",
 
-            REPUTATION_COOLDOWN: (user) => `You already gived a reputation recently. Try again in **${this.convertMs(user.cooldowns.daily-Date.now())}**`,
+            REPUTATION_COOLDOWN: (user) => `You already gived a reputation recently. Try again in **${this.convertMs(user.cooldowns.daily - Date.now())}**`,
             REPUTATION_SUCCESS: (target) => `You gave <@${target.id}> 1 reputation.`,
             REPUTATION_NICE_TRY: "You can't give a reputation to yourself."
 
