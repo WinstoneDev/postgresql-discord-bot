@@ -1,19 +1,27 @@
 # Requirements
 
 NodeJS v12 or higher
+
 PostgreSQL v12 or higher
+
 
 # Starting bot:
 
 Edit config.js
+
 npm i discord.js chalk ms moment moment-timezone pg
+
 Run /database/generate-db.js first
+
 Run index.js
+
 
 # Credits
 
 Eval Command: https://github.com/TheSharks/WildBeast
+
 Language Structure: https://github.com/Androz2091/AtlantaBot
+
 
 # License
 
